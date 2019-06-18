@@ -5,5 +5,5 @@ docker run --network aston_network --name db -e MYSQL_ROOT_PASSWORD=root -d mysq
 ```
 
 ```sh
-docker run --network aston_network -p 8080:80 --name myadmin -e PMA_HOST=db -d phpmyadmin/phpmyadmin 
+docker run --network aston_network -p 127.0.0.1:8080:80 --name myadmin -e PMA_HOST=db -e PMA_ARBITRARY=1 -d phpmyadmin/phpmyadmin 
 ```
