@@ -1,3 +1,5 @@
 # Devops With Docker
 
-- [Container](container.md)
+- [container](docs/container.md)
+- [network](docs/network.md)
+- [docker-machine](docs/docker-machine.md)
