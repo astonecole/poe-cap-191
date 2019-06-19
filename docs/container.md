@@ -28,7 +28,7 @@ docker ps
 L'option **-a** permet d'afficher les containers lancer mais stoppé.
 
 ```sh
-docker ps
+docker ps -a
 ```
 
 
