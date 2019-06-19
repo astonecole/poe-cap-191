@@ -12,6 +12,8 @@ Exemple avec [nextcloud](https://hub.docker.com/_/nextcloud/) :
 docker run -d -p 8000:80 --name mycloud nextcloud
 ```
 
+Ouvrez votre navigateur favori [http://localhost:8000](http://localhost:8000)
+
 - **-d** lance l'application en arrière plan
 - **-p** permet de publier le port de l'application
 - **--name** option permettant de donner un nom au container
