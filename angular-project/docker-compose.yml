@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+  angular:
+    image: nanoninja/ngapp
+    ports:
+      - 8000:80
