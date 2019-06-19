@@ -17,6 +17,22 @@ docker run -d -p 8000:80 --name mycloud nextcloud
 - **--name** option permettant de donner un nom au container
 - **nextcloud** est le nom de l'image utilisé pour démarrer l'application
 
+
+### Lancer un container en mode interactif
+
+Télécharger l'image alpine :
+
+```sh
+docker pull alpine
+```
+
+puis :
+
+```sh
+docker run -it alpine sh
+```
+
+
 ## Lister les containers
 
 La sous commande **ps** permet d'afficher les containers (processus) en cour d'éxécution.
@@ -31,7 +47,6 @@ L'option **-a** permet d'afficher les containers lancer mais stoppé.
 docker ps -a
 ```
 
-
 ## Inspect
 
 ```sh
@@ -41,29 +56,3 @@ docker inspect -f "{{ .ID  }}" 404
 ```sh
 docker inspect -f "{{ json .Config }}" 404
 ```
-
-#### Connection dans le container MySQL
-
-```sh
-docker exec -it db /bin/bash
-```
-
-```sh
-mysql -u root -p
-Password: 
-```
-
-
-```sh
-docker run -p 27017:27017 --name mgo -v mongodb:/data/db -d mongo
-```
-
-```sh
-docker exec -it mgo /bin/bash
-```
-
-## Images
-
-- mysql
-- phpmyadmin/phpmyadmin
-
