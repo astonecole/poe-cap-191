@@ -5,7 +5,7 @@ Docker machine est un utilitaire permettant de provisionner des machines physiqu
 ## Mise en pratique
 
 Pour faire un test de déploiement en local il est nécessaire de créer une machine virtuelle.
-La commande à employer varie selon le systeme de virtualisation installer sur votre ordinateur.
+La commande à employer varie selon le système de virtualisation installé sur votre ordinateur.
 
 ### Exemple avec VirtualBox
 
@@ -19,7 +19,7 @@ docker-machine env myserver
 
 ### Exemple avec HyperV
 
-Il peut être nécessaire de créer un switch dans hyperv si la commande suivante de suffit pas. Il faut aussi ouvrir un terminal en mode administrateur.
+Il peut être nécessaire de créer un switch dans hyperv. Ouvrez un terminal en mode administrateur.
 
 Lire le tutoriel ["Hyper-V Troubleshooting"](https://rominirani.com/docker-machine-windows-10-hyper-v-troubleshooting-tips-367c1ea73c24) pour les problèmes avec hyperv.
 
